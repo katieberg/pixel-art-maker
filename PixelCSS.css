@@ -1,0 +1,7 @@
+.square{
+    background-color: pink;
+    height:50px;
+    width:50px;
+    display:inline-block;
+    border: solid black 2px;
+}
