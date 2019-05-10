@@ -6,14 +6,26 @@
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         </head>
         <body>
-            <div class="container" id="pixelPainter"></div>
-            <div class="container" id="palette">
-                <div>
-                    <div class="circle" id="pinkSwatch" style="background-color:pink"></div>
-                    <div class="circle" id="purpleSwatch" style="background-color:purple"></div>
-                    <div class="circle" id="blueSwatch" style="background-color:blue"></div>
-                    <div class="circle" id="yellowSwatch" style="background-color:yellow"></div>
-                    <div class="circle" id="greenSwatch" style="background-color:green"></div>
+            <div class="container">  
+                <div class="row">
+                    <h1 class="col col-md-12" style="text-align: center">Welcome To My Painting Page</h1>
+                </div>
+            </div>  
+            <div class="container" style="text-align: center">
+                <div class="row">
+                    <div id="palette" class="col col-md-1">
+                        <div class="circle" id="pinkSwatch" style="background-color:pink"></div>
+                        <div class="circle" id="purpleSwatch" style="background-color:purple"></div>
+                        <div class="circle" id="blueSwatch" style="background-color:blue"></div>
+                        <div class="circle" id="yellowSwatch" style="background-color:yellow"></div>
+                        <div class="circle" id="greenSwatch" style="background-color:green"></div>
+                        <div class="circle" id="whiteSwatch" style="background-color:white"></div>
+                        <div class="circle" id="blackSwatch" style="background-color:black"></div>
+                        <div class="circle" id="orangeSwatch" style="background-color:orange"></div>
+                        <div class="circle" id="redSwatch" style="background-color:red"></div>
+                        <div id="clearGrid" style="">CLEAR GRID</div>
+                    </div>
+                    <div class="col col-md-9" id="pixelPainter"></div>
                 </div>
             </div>
             <script src="Pixel.js"></script>

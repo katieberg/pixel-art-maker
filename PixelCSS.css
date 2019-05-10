@@ -1,14 +1,22 @@
 .square{
-    height:15px;
-    width:15px;
-    display:inline-block;
+    height: 15px;
+    width: 15px;
+    display: inline-block;
     border: solid black 1px;
+    background-color: white;
 }
 
 .circle {
     height: 50px;
     width: 50px;
     border-radius: 50%;
-    border: solid black 1px;
-    display:inline-block;
+    border: solid black 2px;
+    margin: 10px;
   }
+
+.container {
+    padding: 50px;
+}
+body {
+    font-family: Impact, Charcoal, sans-serif
+}
