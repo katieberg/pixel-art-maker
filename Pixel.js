@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
-    var brushColor="pink"
-    var paintZone = document.querySelector("#pixelPainter")
-    var paintSize = 40
-    var clearAllTiles=document.querySelector("#clearGrid")
+    var brushColor="pink";
+    var paintZone = document.querySelector("#pixelPainter");
+    var paintSize = 40;
+    var clearAllTiles=document.querySelector("#clearGrid");
     for(let i=0;i<paintSize;i++){
         var newRow=document.createElement("div");
         newRow.style.height="14px";
@@ -20,11 +20,12 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     var switchBrush = function(event){
         if(event.target.classList.contains("circle")){
-            brushColor=event.target.style.backgroundColor
+            brushColor=event.target.style.backgroundColor;
+            document.querySelector("#currentColor").style.backgroundColor=brushColor;
         }
     }
     var gridClear = function(){
-        var myCollection = document.getElementsByClassName("square")
+        var myCollection = document.getElementsByClassName("square");
         for(var el of myCollection){
             el.style.backgroundColor="white";
         }
